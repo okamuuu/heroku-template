@@ -1,7 +1,7 @@
 connect = require 'connect'
 serveStatic = require 'serve-static'
 
-port = 3000
+port = process.env.PORT or 3000
 
 app = do connect
 
